@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Haldi Event</title>
+    <link rel="stylesheet" href="fragments.css">
+</head>
+
+<body>
+    <div class="upper-block">
+        <div th:replace="fragments :: topbar"></div>
+
+    </div>
+    <form action="/bookhaldi" method="post">
+        <div class="main-block">
+            <h2>Decoration Options</h2>
+            <label for="eventDate">Select Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <div class="decor-container">
+                <!-- Decor 1 -->
+                <div class="decor-card">
+                    <img src="/images/haldi1.jpg" alt="Haldi1">
+                    <h3>Yellow floral decent decoration</h3>
+                    <p class="price">₹15,000</p>
+                    <button type="submit" name="floral" value="Yellow floral decent decoration" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <!-- Decor 2 -->
+                <div class="decor-card">
+                    <img src="/images/haldi2.jpg" alt="Haldi2">
+                    <h3>Yellow and orange floral grand design</h3>
+                    <p class="price">₹20,000</p>
+                    <button type="submit" name="floral" value="Yellow and orange floral grand design"
+                        class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <!-- Decor 3 -->
+                <div class="decor-card">
+                    <img src="/images/haldi3.jpg" alt="Haldi3">
+                    <h3>Simple and elegant floral decoration</h3>
+                    <p class="price">₹25,000</p>
+                    <button type="submit" name="floral" value="Simple and elegant floral decoration"
+                        class="book-btn">Book
+                        Now</button>
+                </div>
+                <!-- Decor 4 -->
+                <div class="decor-card">
+                    <img src="/images/haldi4.jpg" alt="Haldi4">
+                    <h3>White and yellow floral decent design</h3>
+                    <p class="price">₹30,000</p>
+                    <button type="submit" name="floral" value="White and yellow floral decent design"
+                        class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <div class="decor-card">
+                    <img src="/images/haldiflowers1.jpg" alt="Haldiflowers1">
+                    <h3>Yellow round floral design</h3>
+                    <p class="price">₹3000</p>
+                    <button type="submit" name="flowerset" value="Yellow round floral design"
+                        class="book-btn">BookNow</button>
+                </div>
+
+                <div class="decor-card">
+                    <img src="/images/haldiflowers2.jpg" alt="Haldiflowers1">
+                    <h3>Red flowerset</h3>
+                    <p class="price">₹1500</p>
+                    <button type="submit" name="flowerset" value="Red flowerset" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <div class="decor-card">
+                    <img src="/images/haldiflowers3.jpg" alt="Haldiflowers3">
+                    <h3>White floral set</h3>
+                    <p class="price">₹4000</p>
+                    <button type="submit" name="flowerset" value="White floral set" class="book-btn">Book Now</button>
+                </div>
+
+                <div class="decor-card">
+                    <img src="/images/haldiflowers4.jpg" alt="Haldiflowers4">
+                    <h3>Pink and white floral elegant set</h3>
+                    <p class="price">₹2000</p>
+                    <button type="submit" name="flowerset" value="Pink and white floral elegant set"
+                        class="book-btn">Book
+                        Now</button>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Wedding</title>
+    <link rel="stylesheet" href="fragments.css">
+</head>
+
+<body>
+    <div class="upper-block">
+        <div th:replace="fragments :: topbar"></div>
+
+    </div>
+    <form action="/bookwedding" method="post">
+        <div class="main-block">
+            <h2>Decoration Options</h2>
+            <label for="eventDate">Select Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <div class="decor-container">
+                <!-- Decor 1 -->
+                <div class="decor-card">
+                    <img src="/images/wedding1.jpg" alt="Wedding1">
+                    <h3>Vibrant Yellow floral beach side decoration</h3>
+                    <p class="price">₹15,000</p>
+                    <button type="submit" name="wedding" value="Vibrant Yellow floral beach side decoration"
+                        class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <!-- Decor 2 -->
+                <div class="decor-card">
+                    <img src="/images/wedding2.jpg" alt="Wedding2">
+                    <h3>White and pink grand design</h3>
+                    <p class="price">₹20,000</p>
+                    <button type="submit" name="wedding" value="White and pink grand design" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <!-- Decor 3 -->
+                <div class="decor-card">
+                    <img src="/images/wedding3.jpg" alt="Wedding3">
+                    <h3>Fort decoration</h3>
+                    <p class="price">₹25,000</p>
+                    <button type="submit" name="wedding" value="Fort decoration" class="book-btn">Book
+                        Now</button>
+                </div>
+                <!-- Decor 4 -->
+                <div class="decor-card">
+                    <img src="/images/wedding4.jpg" alt="Wedding4">
+                    <h3>White and yellow floral decent design</h3>
+                    <p class="price">₹30,000</p>
+                    <button type="submit" name="wedding" value="White and yellow floral decent design"
+                        class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <div class="decor-card">
+                    <img src="/images/wedding5.jpg" alt="Wedding5">
+                    <h3>Tradtional Mandap</h3>
+                    <p class="price">₹3000</p>
+                    <button type="submit" name="wedding" value="Tradtional Mandap" class="book-btn">BookNow</button>
+                </div>
+
+                <div class="decor-card">
+                    <img src="/images/wedding6.jpg" alt="Wedding6">
+                    <h3>Fort and buffay decoration</h3>
+                    <p class="price">₹1500</p>
+                    <button type="submit" name="wedding" value="Fort and buffay decoration" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <div class="decor-card">
+                    <img src="/images/wedding7.jpg" alt="Wedding7">
+                    <h3>White floral and golden set</h3>
+                    <p class="price">₹4000</p>
+                    <button type="submit" name="wedding" value="White floral and golden set" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <div class="decor-card">
+                    <img src="/images/wedding8.jpg" alt="Wedding8">
+                    <h3> white floral elegant set for christian wedding</h3>
+                    <p class="price">₹2000</p>
+                    <button type="submit" name="wedding" value="white floral elegant set for christian wedding"
+                        class="book-btn">Book
+                        Now</button>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+
+</html>

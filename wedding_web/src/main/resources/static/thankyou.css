@@ -1,0 +1,32 @@
+.thankyou-block {
+    text-align: center;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    color: #a0527a;
+    padding: 20px;
+}
+
+.thankyou-block h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.thankyou-block p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.thankyou-block .book-btn {
+    display: inline-block;
+    background: #a0527a;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.thankyou-block .book-btn:hover {
+    background: #7d3b5b;
+}

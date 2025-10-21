@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wedding Home</title>
+    <link rel="stylesheet" th:href="@{/fragments.css}">
+    <link rel="stylesheet" th:href="@{/home.css}">
+
+</head>
+
+<body>
+    <div th:replace="fragments :: topbar"></div>
+
+    <!-- Add this below your top-bar in home.html -->
+    <div class="main-block">
+        <a href="/engagement" class="event-block">Engagement</a>
+        <a href="/haldi" class="event-block">Haldi</a>
+        <a href="/sangeet" class="event-block">Sangeet</a>
+        <a href="/bridalshower" class="event-block">BridalShower</a>
+        <a href="/mehandi" class="event-block">Mehandi</a>
+        <a href="/wedding" class="event-block">Wedding</a>
+        <a href="/reception" class="event-block">Reception</a>
+        <a href="/cuisine
+        " class="event-block">Cuisine</a>
+
+    </div>
+
+</body>
+
+</html>

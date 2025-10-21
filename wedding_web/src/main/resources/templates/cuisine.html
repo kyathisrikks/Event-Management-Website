@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cuisine Menu</title>
+    <link rel="stylesheet" href="fragments.css">
+</head>
+
+<body>
+    <div class="upper-block">
+        <div th:replace="fragments :: topbar"></div>
+    </div>
+
+    <form action="/bookcuisine" method="post" class="menu-section">
+
+        <h2>Select Your Cuisine</h2>
+        <div>
+            <label for="eventDate">Select Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+        </div>
+        <!-- Veg Menu -->
+        <div class="menu-bar">
+            <h3>🥦 Veg Menu</h3>
+            <div class="menu-item">
+                <label>Paneer Butter Masala</label>
+                <input type="checkbox" name="vegItems" value="Paneer Butter Masala">
+            </div>
+            <div class="menu-item">
+                <label>Veg Biryani</label>
+                <input type="checkbox" name="vegItems" value="Veg Biryani">
+            </div>
+            <div class="menu-item">
+                <label>Dal Tadka</label>
+                <input type="checkbox" name="vegItems" value="Dal Tadka">
+            </div>
+            <div class="menu-item">
+                <label>Mixed Vegetable Curry</label>
+                <input type="checkbox" name="vegItems" value="Mixed Vegetable Curry">
+            </div>
+            <div class="menu-item">
+                <label>Chapathi / Naan</label>
+                <input type="checkbox" name="vegItems" value="Chapathi / Naan">
+            </div>
+
+            <button type="submit" class="book-btn">Book Veg Menu</button>
+            <!-- <button type="submit" name="menuType" value="veg" class="book-btn">Book Veg Menu</button> -->
+
+        </div>
+
+        <!-- Non-Veg Menu -->
+        <div class="menu-bar">
+            <h3>🍗 Non-Veg Menu</h3>
+            <div class="menu-item">
+                <label>Chicken Biryani</label>
+                <input type="checkbox" name="nonVegItems" value="Chicken Biryani">
+            </div>
+            <div class="menu-item">
+                <label>Mutton Curry</label>
+                <input type="checkbox" name="nonVegItems" value="Mutton Curry">
+            </div>
+            <div class="menu-item">
+                <label>Fish Fry</label>
+                <input type="checkbox" name="nonVegItems" value="Fish Fry">
+            </div>
+            <div class="menu-item">
+                <label>Butter Chicken</label>
+                <input type="checkbox" name="nonVegItems" value="Butter Chicken">
+            </div>
+            <div class="menu-item">
+                <label>Prawns Curry</label>
+                <input type="checkbox" name="nonVegItems" value="Prawns Curry">
+            </div>
+
+            <button type="submit" class="book-btn">Book Non-Veg Menu</button>
+            <!-- <button type="submit" name="menuType" value="nonveg" class="book-btn">Book Non-Veg Menu</button> -->
+
+        </div>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bridal shower Event</title>
+    <link rel="stylesheet" href="fragments.css">
+</head>
+
+<body>
+    <div class="upper-block">
+        <div th:replace="fragments :: topbar"></div>
+
+    </div>
+    <form action="/bookbridalshower" method="post">
+        <div class="main-block">
+            <h2>Decoration Options</h2>
+            <label for="eventDate">Select Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <div class="decor-container">
+                <!-- Decor 1 -->
+                <div class="decor-card">
+                    <img src="/images/bridalshower1.jpg" alt="Bridalshower1">
+                    <h3>Simple white and pink decoration</h3>
+                    <p class="price">₹15,000</p>
+                    <button type="submit" name="bridalshower" value="Simple white and pink decoration"
+                        class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <!-- Decor 2 -->
+                <div class="decor-card">
+                    <img src="/images/bridalshower2.jpg" alt="Bridalshower2">
+                    <h3>Simple bridal shower design</h3>
+                    <p class="price">₹20,000</p>
+                    <button type="submit" name="bridalshower" value="Simple bridal shower design" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <!-- Decor 3 -->
+                <div class="decor-card">
+                    <img src="/images/bridalshower3.jpg" alt="Bridalshower3">
+                    <h3>Elegant bridal shower decoration</h3>
+                    <p class="price">₹25,000</p>
+                    <button type="submit" name="bridalshower" value="Elegant bridal shower decoration"
+                        class="book-btn">Book
+                        Now</button>
+                </div>
+                <!-- Decor 4 -->
+                <div class="decor-card">
+                    <img src="/images/bridalshower4.jpg" alt="Bridalshower4">
+                    <h3>Simple white ballon design</h3>
+                    <p class="price">₹30,000</p>
+                    <button type="submit" name="bridalshower" value="Simple white ballon design" class="book-btn">Book
+                        Now</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" th:href="@{fragments.css}">
+</head>
+
+<body>
+    <div class="upper-block">
+        <div th:replace="fragments :: topbar"></div>
+
+    </div>
+
+    <div class="main-block">
+        <h2>My Profile</h2>
+
+        <div th:if="${session.loggedInUser != null}">
+            <div class="user-info">
+                <p><strong>Username:</strong> <span th:text="${session.loggedInUser.username}"></span></p>
+                <p><strong>Email:</strong> <span th:text="${session.loggedInUser.email}"></span></p>
+            </div>
+
+            <h3>My Bookings</h3>
+            <div th:if="${#lists.isEmpty(bookings)}">
+                <p>No bookings yet.</p>
+            </div>
+
+            <div class="booking-list" th:if="${!#lists.isEmpty(bookings)}">
+                <div class="booking-card" th:each="booking : ${bookings}">
+                    <h4 th:text="'Event Date: ' + ${booking.eventDate}"></h4>
+                    <ul>
+                        <li th:if="${booking.decor != null}" th:text="'Decoration: ' + ${booking.decor}"></li>
+                        <li th:if="${booking.cake != null}" th:text="'Cake: ' + ${booking.cake}"></li>
+                        <li th:if="${booking.floral != null}" th:text="'Floral: ' + ${booking.floral}"></li>
+                        <li th:if="${booking.flowerset != null}" th:text="'Flower Set: ' + ${booking.flowerset}"></li>
+                        <li th:if="${booking.sangeet != null}" th:text="'Sangeet: ' + ${booking.sangeet}"></li>
+                        <li th:if="${booking.bridalshower != null}"
+                            th:text="'Bridal Shower: ' + ${booking.bridalshower}"></li>
+                        <li th:if="${booking.mehandi != null}" th:text="'Mehandi: ' + ${booking.mehandi}"></li>
+                        <li th:if="${booking.wedding != null}" th:text="'Wedding: ' + ${booking.wedding}"></li>
+                        <li th:if="${booking.reception != null}" th:text="'Reception: ' + ${booking.reception}"></li>
+                        <li th:if="${booking.vegItems != null and !#strings.isEmpty(booking.vegItems)}"
+                            th:text="'Veg Items: ' + ${booking.vegItems}"></li>
+
+                        <li th:if="${booking.nonVegItems != null and !#strings.isEmpty(booking.nonVegItems)}"
+                            th:text="'Non-Veg Items: ' + ${booking.nonVegItems}"></li>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <br>
+
+            <a th:href="@{/logout}" class="book-btn">Logout</a>
+        </div>
+
+        <div th:if="${session.loggedInUser == null}">
+            <p>You are not logged in.</p>
+            <a th:href="@{/login}" class="book-btn">Login</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

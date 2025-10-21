@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <div th:fragment="topbar">
+        <div class="top-bar">
+            <div class="quote">
+                "A successful marriage requires falling in love many times, always with the same person."
+                <div>
+                    <div class="profile-section">
+                        <a th:href="@{/profile}">
+                            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Profile"
+                                class="profile-icon">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div th:fragment="topbar">
+        <div class="top-bar">
+            <!-- Left side: quote -->
+            <div class="quote">
+                "A successful marriage requires falling in love many times, always with the same person."
+            </div>
+
+            <!-- Right side: profile icon -->
+            <div class="profile-section">
+                <div class="quote">
+                    My Profile
+                </div>
+                <a th:href="@{/profile}">
+                    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Profile" class="profile-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

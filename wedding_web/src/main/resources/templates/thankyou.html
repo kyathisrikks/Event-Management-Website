@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="thankyou.css">
+</head>
+
+<body>
+    <div class="thankyou-block">
+        <h2>🎉 Thank You!</h2>
+        <p>Your order has been successfully booked.</p>
+
+        <p th:if="${eventDate != null}">
+            <strong>Event Date:</strong> <span th:text="${eventDate}"></span>
+        </p>
+
+        <p th:if="${decor != null}">
+            <strong>Decoration:</strong> <span th:text="${decor}"></span>
+        </p>
+
+        <p th:if="${cake != null}">
+            <strong>Cake:</strong> <span th:text="${cake}"></span>
+        </p>
+
+        <p th:if="${floral != null}">
+            <strong>Haldi decoration:</strong> <span th:text="${floral}"></span>
+        </p>
+
+        <p th:if="${flowerset != null}">
+            <strong>Flower Set:</strong> <span th:text="${flowerset}"></span>
+        </p>
+
+        <p th:if="${sangeet != null}">
+            <strong>Sangeet Decoration:</strong> <span th:text="${sangeet}"></span>
+        </p>
+
+        <p th:if="${bridalshower != null}">
+            <strong>BridalShower Decoration:</strong> <span th:text="${bridalshower}"></span>
+        </p>
+
+
+        <p th:if="${mehandi != null}">
+            <strong>Mehandi Decoration:</strong> <span th:text="${mehandi}"></span>
+        </p>
+
+        <p th:if="${wedding != null}">
+            <strong>Wedding Decoration:</strong> <span th:text="${wedding}"></span>
+        </p>
+
+        <p th:if="${reception != null}">
+            <strong>Reception Decoration:</strong> <span th:text="${reception}"></span>
+        </p>
+
+        <!-- <p th:if="${menuType != null}">
+            <strong>Selected menutype:</strong> <span th:text="${menuType}"></span>
+        </p> -->
+
+        <div th:if="${vegItems != null and !#strings.isEmpty(vegItems)}">
+            <p><strong>Selected Veg Items:</strong> <span th:text="${vegItems}"></span></p>
+        </div>
+
+        <div th:if="${nonVegItems != null and !#strings.isEmpty(nonVegItems)}">
+            <p><strong>Selected Non-Veg Items:</strong> <span th:text="${nonVegItems}"></span></p>
+        </div>
+
+
+
+
+        <br>
+        <a href="/" class="book-btn">Back to Home</a>
+    </div>
+</body>
+
+</html>

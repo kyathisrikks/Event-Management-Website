@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Engagement Event</title>
+    <link rel="stylesheet" href="fragments.css">
+</head>
+
+<body>
+    <div class="upper-block">
+        <div th:replace="fragments :: topbar"></div>
+
+    </div>
+    <form action="/bookengagement" method="post">
+        <div class="main-block">
+            <h2>Decoration Options</h2>
+            <label for="eventDate">Select Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <div class="decor-container">
+                <!-- Decor 1 -->
+                <div class="decor-card">
+                    <img src="/images/decor1.jpg" alt="Decor1">
+                    <h3>Pink floral simple decoration</h3>
+                    <p class="price">₹15,000</p>
+                    <button type="submit" name="decor" value="Pink floral simple decoration" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <!-- Decor 2 -->
+                <div class="decor-card">
+                    <img src="/images/decor2.jpg" alt="Decor2">
+                    <h3>White floral grand design</h3>
+                    <p class="price">₹20,000</p>
+                    <button type="submit" name="decor" value="White floral grand design" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <!-- Decor 3 -->
+                <div class="decor-card">
+                    <img src="/images/decor3.jpg" alt="Decor3">
+                    <h3>Regular floral decoration</h3>
+                    <p class="price">₹25,000</p>
+                    <button type="submit" name="decor" value="Regular floral decoration" class="book-btn">Book
+                        Now</button>
+                </div>
+                <!-- Decor 4 -->
+                <div class="decor-card">
+                    <img src="/images/decor4.jpg" alt="Decor4">
+                    <h3>White and Gold floral decent design</h3>
+                    <p class="price">₹30,000</p>
+                    <button type="submit" name="decor" value="White and Gold floral decent design" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <div class="decor-card">
+                    <img src="/images/cake1.jpg" alt="Cake1">
+                    <h3>White Creamy chocolate cake</h3>
+                    <p class="price">₹3000</p>
+                    <button type="submit" name="cake" value="White Creamy chocolate cake"
+                        class="book-btn">BookNow</button>
+                </div>
+
+                <div class="decor-card">
+                    <img src="/images/cake2.jpg" alt="Cake2">
+                    <h3>White Creamy vanilla cake</h3>
+                    <p class="price">₹1500</p>
+                    <button type="submit" name="cake" value="White Creamy vanilla cake" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <div class="decor-card">
+                    <img src="/images/cake3.jpg" alt="Cake3">
+                    <h3>Grand Engagement cake</h3>
+                    <p class="price">₹4000</p>
+                    <button type="submit" name="cake" value="Grand Engagement cake" class="book-btn">Book Now</button>
+                </div>
+
+                <div class="decor-card">
+                    <img src="/images/cake4.jpg" alt="Cake4">
+                    <h3>Red velevet two step cake</h3>
+                    <p class="price">₹2000</p>
+                    <button type="submit" name="cake" value="Red velevet two step cake" class="book-btn">Book
+                        Now</button>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+
+</html>

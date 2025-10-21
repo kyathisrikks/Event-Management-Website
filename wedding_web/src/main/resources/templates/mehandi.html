@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mehandi Event</title>
+    <link rel="stylesheet" href="fragments.css">
+</head>
+
+<body>
+    <div class="upper-block">
+        <div th:replace="fragments :: topbar"></div>
+
+    </div>
+    <form action="/bookmehandi" method="post">
+        <div class="main-block">
+            <h2>Decoration Options</h2>
+            <label for="eventDate">Select Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <div class="decor-container">
+                <!-- Decor 1 -->
+                <div class="decor-card">
+                    <img src="/images/Mehandi1.jpg" alt="Mehandi1">
+                    <h3>Floral white and pink decoration</h3>
+                    <p class="price">₹15,000</p>
+                    <button type="submit" name="mehandi" value="Floral white and pink decoration" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <!-- Decor 2 -->
+                <div class="decor-card">
+                    <img src="/images/Mehandi2.jpg" alt="Mehandi2">
+                    <h3>Simple design</h3>
+                    <p class="price">₹20,000</p>
+                    <button type="submit" name="mehandi" value="Simple design" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <!-- Decor 3 -->
+                <div class="decor-card">
+                    <img src="/images/Mehandi3.jpg" alt="Mehandi3">
+                    <h3>Swing floral decoration</h3>
+                    <p class="price">₹25,000</p>
+                    <button type="submit" name="mehandi" value="Swing floral decoration" class="book-btn">Book
+                        Now</button>
+                </div>
+                <!-- Decor 4 -->
+                <div class="decor-card">
+                    <img src="/images/Mehandi4.jpg" alt="Mehandi4">
+                    <h3>Grand mehandi design</h3>
+                    <p class="price">₹30,000</p>
+                    <button type="submit" name="mehandi" value="Grand mehandi design" class="book-btn">Book
+                        Now</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

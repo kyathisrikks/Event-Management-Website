@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: url('/weddingorgpic.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+}
+
+.form-section {
+    background: rgba(255, 255, 255, 0.8);
+    /* transparent white */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    background: #6c757d;
+    margin-left: 10px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reception Event</title>
+    <link rel="stylesheet" href="fragments.css">
+</head>
+
+<body>
+    <div class="upper-block">
+        <div th:replace="fragments :: topbar"></div>
+
+    </div>
+    <form action="/bookreception" method="post">
+        <div class="main-block">
+            <h2>Decoration Options</h2>
+            <label for="eventDate">Select Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <div class="decor-container">
+                <!-- Decor 1 -->
+                <div class="decor-card">
+                    <img src="/images/reception1.jpg" alt="Reception1">
+                    <h3>Floral white decoration</h3>
+                    <p class="price">₹15,000</p>
+                    <button type="submit" name="reception" value="Floral white decoration" class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <!-- Decor 2 -->
+                <div class="decor-card">
+                    <img src="/images/reception2.jpg" alt="Reception2">
+                    <h3>White floral Trending reception design</h3>
+                    <p class="price">₹20,000</p>
+                    <button type="submit" name="reception" value="White floral Trending reception design"
+                        class="book-btn">Book
+                        Now</button>
+                </div>
+
+                <!-- Decor 3 -->
+                <div class="decor-card">
+                    <img src="/images/reception3.jpg" alt="Reception3">
+                    <h3>Tree light floral decoration</h3>
+                    <p class="price">₹25,000</p>
+                    <button type="submit" name="reception" value="Tree light floral decoration" class="book-btn">Book
+                        Now</button>
+                </div>
+                <!-- Decor 4 -->
+                <div class="decor-card">
+                    <img src="/images/reception4.jpg" alt="Reception4">
+                    <h3>Traditional decoration</h3>
+                    <p class="price">₹30,000</p>
+                    <button type="submit" name="reception" value="Traditional decoration" class="book-btn">Book
+                        Now</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
